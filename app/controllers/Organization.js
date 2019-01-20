@@ -64,7 +64,7 @@ exports.organList = function(req,res) {
             console.log(err);
         }
         if( organs ) {
-            res.render('organizationList',{
+            res.render('OrganizationList',{
                 title:"组织信息管理",
                 organs:organs
             });

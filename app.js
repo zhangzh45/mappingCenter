@@ -18,7 +18,7 @@ var logger = require('morgan');
 
 
 //连接数据库
-mongoose.connect('mongodb://localhost/mapping');
+mongoose.connect('mongodb://222.200.180.59/mapping');
 
 
 app.set('views','./app/views/pages');//视图页面

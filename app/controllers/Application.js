@@ -42,7 +42,7 @@ exports.appList = function(req,res) {
     Appli.find({userId:userId},function(err,applis) {
         // 从服务管理中心根据员工ID（empId）获取其注册过的服务和流程，若存在则更新，不存在则添加
         if (_empId != undefined && _empId != null) {
-            var uri = "http://127.0.0.1:8090/SSH_Prototype_J2EE_5.0/getAllAvaService.action?userId=" + _empId;
+            var uri = "http://192.168.0.93:8090/SSH_Prototype_J2EE_5.0/getAllAvaService.action?userId=" + _empId;
             request.get({url: uri}, function (errInfo, appRegister) {
                 if (errInfo) {
                     console.log("从服务中心获取服务列表错误！" + uri + errInfo);
